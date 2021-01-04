@@ -1,15 +1,13 @@
 {
-"name": "vw-toast",
-"version": "0.0.0",
-"description": "vw-toast component",
-"main": "dist/cjs/index.js",
-"module": "dist/es/index.js",
-"author": "weil <1034470737@qq.com>",
+  "name": "vw-toast",
+  "version": "0.0.1",
+  "description": "vw-toast component",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "author": "weil <1034470737@qq.com>",
   "license": "MIT",
   "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": []
-  }
+}
