@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`vw-steps vw-steps-snapshot 1`] = `
+<div
+  class="vw-steps"
+>
+  <div
+    class="vw-steps-list"
+  >
+    1
+  </div>
+   
+  <div
+    class="vw-steps-line"
+  />
+</div>
+`;

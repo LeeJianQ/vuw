@@ -1,5 +1,12 @@
 const path = require("path");
 module.exports = {
+  stories: ["../packages/**/*.stories.@(js|jsx|ts|tsx)"],
+  addons: [
+    "@storybook/preset-scss",
+    "@storybook/addon-controls",
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+  ],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
     // You can change the configuration based on that.
@@ -11,13 +18,7 @@ module.exports = {
       use: ["style-loader", "css-loader", "sass-loader"],
       include: path.resolve(__dirname, "../"),
     });
-
     // Return the altered config
     return config;
   },
-  stories: [
-    "../stories/**/*.stories.mdx",
-    "../packages/**/*.stories.@(js|jsx|ts|tsx)",
-  ],
-  addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
 };

@@ -1,0 +1,19 @@
+import Vw{{properCase name}} from '../src/{{name}}.vue'
+
+export default {
+title: 'Vw{{properCase name}}',
+component: Vw{{properCase name}}
+}
+
+const Template = (args, { argTypes }) => ({
+components: { Vw{{properCase name}} },
+props: Object.keys(argTypes),
+template:
+'<vw-{{name}}></vw-{{name}}>',
+});
+
+/* 复制模版函数 */
+export const {{properCase name}} = Template.bind({});
+
+/* props 属性 */
+{{properCase name}}.args = {};
